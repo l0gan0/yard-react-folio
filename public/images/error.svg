@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>error</title>
+    <g id="mobile-r1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Contact" transform="translate(-44.000000, -1650.000000)">
+            <g id="Contact-Form" transform="translate(30.000000, 1006.000000)">
+                <g id="Failed" transform="translate(0.000000, 632.033000)">
+                    <g id="error" transform="translate(14.000000, 11.967000)">
+                        <circle id="Oval" fill="#DF453E" cx="17.5" cy="17.5" r="17.5"></circle>
+                        <polygon id="Fill-1" fill="#FDFFF5" points="23.0225464 10 18 15.3922414 12.9765252 10 11.0092838 12.1187003 16.0318302 17.5 11 22.8812997 12.9765252 25 18 19.609748 23.0318302 24.9900531 25 22.8812997 19.9681698 17.5 25 12.1187003"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,208 @@
+// removed when moved to js globsl styles
+
+$mobile-small: 320px;
+$mobile: 414px;
+$mobile-wide: 690px;
+$tablet: 768px;
+$tablet-wide: 960px;
+$desktop: 1080px;
+$max-width: 1200px;
+$desktop-wide: 1374px; 
+
+$pseudo-black: #0B1306;
+$dark: #232A1E;
+$grey: #7F827C;
+$pseudo-white: #FDFFF5;
+$green: #81D742;
+$light-green: #F3FBEC;
+$mid-green: #E6F6D8;
+$white: #FFF;
+$red: #DF453E;
+
+$mobile-pad: 33px;
+$tablet-pad: 50px;
+$tablet-wide-pad: 66px;
+$desktop-pad: 90px;
+
+// mobile typography
+
+h1, h2, h5 {
+    margin-block-start: unset;
+    margin-block-end: unset;
+    font-family: 'Tiempos Fine Test' !important;
+    font-weight: bold !important;
+}
+
+h1 {
+    font-size: 14.25vw;
+    line-height: 1em;
+    padding-top: 0;
+    padding-bottom: 0rem;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0;
+    justify-self: flex-end;
+}
+
+h2 {
+    font-size: 11.5vw;
+    line-height: 1em;
+    padding-bottom: 1.125rem;
+}
+
+h3 {
+    font-size: 1.625rem;
+    line-height: 2rem;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 7vw;
+    line-height: 1.2em;
+    padding-bottom: 1.125rem;
+    color: $green;
+}
+
+.caption {
+    font-size: 1rem;
+    line-height: 1rem;
+    font-family: monospace;
+    padding-bottom: 1.125rem;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.125rem;
+    line-height: 1.875;
+    letter-spacing: .03em;
+    padding-bottom: 1.125rem;
+    font-weight: 400;
+}
+
+li {
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: .03em;
+    padding-bottom: 1.125rem;
+    font-weight: 400;
+}
+
+ul.styled {
+    margin-left: 0;
+    padding-left: 33px;
+    padding-bottom: 1em;
+
+
+    li {
+        margin-left: 0;
+        padding-left: 0;
+        padding-inline-start: 1em;
+        padding-right: 4px;
+
+        &::marker {
+            font-size: 130%;
+            color: $green;    
+        }
+
+    }
+
+
+}
+
+.caption {
+    font-size: .875rem;
+    color: $grey;
+    padding-right: 10px;
+}
+
+.header {
+    background-color: $pseudo-black;
+    padding-top: 50vh;
+
+    h1 {
+        color: $pseudo-white;
+    }
+
+}
+
+main.content {
+    background-color: $pseudo-white;
+}
+
+@media screen and (min-width: $tablet) {
+
+    main.content {
+        padding: 50px;
+    }
+
+    h1 {
+        font-size: 11vw;
+    }
+
+    h2 {
+        font-size: 8vw;
+    }
+
+    h3 {
+        font-size: 2rem;
+        line-height: 1.25em;
+    }
+
+    h5 {
+        font-size: 4vw;
+        line-height: 1.3em;
+    }
+
+    .header {
+        padding-top: 30vh;
+    }
+
+    p{
+        font-size: 1.5rem !important;
+        line-height: 2.625rem  !important;
+        font-weight: 300;
+        padding-bottom: 1em;
+    }
+
+    li {
+        font-size: 1.25rem !important;
+        line-height: 2.25rem  !important;
+        font-weight: 300;
+    }
+
+}
+
+@media screen and (min-width: $tablet-wide) {
+
+    header {
+        padding: inherit; 
+    }
+}
+
+
+
+@media screen and (min-width: $desktop) {
+
+    h2 {
+        font-size: 96px !important;
+    }
+}
+
+
+@media screen and (min-width: $desktop-wide) {
+
+
+    h1 {
+        font-size: 151px !important;
+    }
+
+    h2 {
+        font-size: 99px !important;
+    }
+}

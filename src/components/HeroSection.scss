@@ -1,0 +1,155 @@
+@import "../design-tokens/scss-variables.scss";
+
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    color: $pseudo-white;
+    padding: 33px !important;
+    font-family: 'Tiempos Fine Test', serif;
+    font-weight: bold; 
+}
+
+main#heroScroll {
+
+    h1 span {
+        font-family: 'Tiempos Fine Test', serif !important;
+        font-weight: bold;
+    }
+
+    
+}
+
+.intro-content {
+    display: grid;
+    padding: 80px 33px 100px 33px !important;
+    width: 100%;
+    
+    p {
+        position: relative;
+        z-index: 3;
+        color: white;
+        max-width: 360px;
+    }
+
+    .hero-btns .btn-mobile {
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-btn-arrow {
+        position: relative;
+        z-index: 1;
+        &:before {
+            display: block;
+            content: ' ';
+            background-image: url(../images/dark-arrow.svg);
+            background-repeat: no-repeat;
+            position: absolute;
+            right: -33px;
+            top: -40px;
+            width: 260px;
+            height: 230px;
+            z-index: -1;
+        }
+    }
+
+
+    a {
+        color: $white;
+        border-bottom: 1px solid $green;
+        text-decoration: none;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            border-bottom: 4px solid $green;
+        }
+
+        &:visited {
+            opacity: .8;
+        }
+
+
+    }
+
+    .intro-content.is-inview {
+        .hero-btns {
+            &:before {
+                z-index:3;
+            }
+        }
+    }
+    
+
+}
+
+@media screen and (min-width: $tablet) {
+    
+    h1 {
+        padding-left: 50px !important;
+    }    
+    .intro-content {
+        padding-left: 66px !important;
+        p, li {
+            font-size: 1.5rem !important;
+            line-height: 2.625rem  !important;
+            max-width: 480px !important;
+            padding-bottom: 1em;
+        }
+    }
+
+    
+}
+
+@media screen and (min-width: $tablet-wide) {
+    
+
+    h1 {
+        padding-left: 66px !important;
+    }        
+
+    .intro-content {
+
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        grid-template-columns: minmax(90px, 1fr) minmax(860px, 1200px) minmax(90px, 1fr);
+
+        p {
+            padding-right: 60px;
+            grid-column: 2 / 3;
+        }
+
+        .hero-btns {
+            grid-column: 2 / 3;
+        }
+
+        .hero-btn-arrow {
+            
+            &:before {
+                display: flex;
+                content: ' ';
+                background-repeat: no-repeat;
+                position: absolute;
+                right: 0;
+                top: -180px;
+                width: 440px;
+                height: 444px;
+                z-index: -1;
+                background-size: cover;
+                overflow: hidden;
+            }
+        }
+    
+    }
+    
+}
+
+@media screen and (min-width: $desktop-wide) {
+
+    h1 {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 0 !important;
+    }
+
+}

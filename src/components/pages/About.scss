@@ -1,0 +1,582 @@
+@import "../../design-tokens/scss-variables.scss";
+
+
+.about-page {
+
+    display: grid;
+    grid-template-columns: 33px 1fr 33px;
+    grid-template-rows: auto 300px auto; 
+    background-color: $pseudo-white;
+    margin: 0 auto;
+
+    header.about-header {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+        background-color: $pseudo-black;
+        
+        h1 {
+            position: relative;
+            z-index: 2;
+            top: -40px;
+        }
+
+        &:after {
+            content: ' ';
+            display: flex;
+            width: 100%;
+            height: 44px;
+            
+            background-image: url(../../images/scribbleBot.png);
+            z-index: 7;
+            overflow: hidden; 
+            background-color: $pseudo-white;
+            background-repeat: no-repeat;
+            background-position: top;
+            
+            z-index: 0;
+          
+        }
+        
+    }
+
+    .about-pencil {
+        grid-column: 2 / 3;
+        grid-row: 2;
+        background-image: url(../../images/about-pencil.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: 2px;
+        height: 344px;
+        align-self: flex-start;
+        z-index: 1;
+        margin-top: -100px;
+    }
+
+    main.content {
+        grid-column: 2 / 3;
+        grid-row: 3;
+        background-color: transparent;
+        
+
+        h3 {
+            padding-bottom: 1em;
+        }
+
+    }
+
+    .culture {
+        grid-column: 1 / 4;
+        grid-row: 4;
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        .culture-hero {
+            margin-left: 16px;
+            margin-bottom: 33px;    
+            grid-row: 5;
+            padding-top: 20px;
+            background-image: url(../../images/culture-img.jpg);
+            background-size: cover;
+            height: 261px;
+            color: $pseudo-white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h2 {
+                padding: 15px;
+            }
+
+            .zag-border {
+                height: 32px;
+                width: 100%;
+                background-image: url(../../images/triangle-border.png);
+                background-repeat: repeat-x;
+                justify-content: start;
+                align-self: flex-end;
+                background-position-x: 0;
+                background-size: auto 34px;
+                content: ' ';
+                background-repeat: round;
+            }
+
+        }
+
+        .values {
+            padding: .75rem 33px;
+
+            h3 {
+                padding-bottom: 1rem;
+            }
+
+        }
+
+    }
+
+    .story {
+        grid-column: 1 / 4;
+        grid-row: 6;
+
+        .story-hero {
+            display: grid;
+
+            grid-template-columns: 33px repeat(4, 1fr) 33px;
+            grid-template-rows: auto;
+            overflow: visible;
+
+            h2 {
+                color: $pseudo-white;
+                grid-column: 2 / 6;
+                grid-row: 1 / 3;
+                position: relative;
+                z-index: 3;
+                padding-top: 33px;
+            }
+
+            .auckland {
+                grid-column: 1 / 7;
+                grid-row: 1 / 3;
+                background-image: url(../../images/acukland-city.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 200px;
+                margin-right: 10px;
+            }
+
+            .zoom {
+                grid-column: 3 / 6;
+                grid-row: 2 / 4;
+                display: block;
+                box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+                background-image: url(../../images/zoom-meeting.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 140px;
+                margin-top: 100px;
+            }
+
+        }
+
+        .short-story {
+
+            margin: -120px 0 2rem 33px;
+            padding: 140px 33px 5em 33px;
+
+            position: relative;
+            z-index: 3;
+
+            border-left: 3px solid $green;
+
+        }
+
+        .logan-yard {
+            background-image: url(../../images/logan-yard.jpg);
+            background-size: cover;
+            width: 200px;
+            height: 200px;
+            margin: -3rem 33px 4rem 99px;
+            display: flex;
+            align-self: flex-end;
+            right: 0;
+            float: right;
+
+            .name {
+                position: relative;
+                background-color: $pseudo-white;
+                padding: 1rem;
+                left: -50px;
+                height: auto;
+                width: max-content;
+                align-self: flex-end;
+
+            }
+
+        }
+
+
+    }
+
+    .discuss-cta {
+        grid-column: 1 / 4;
+        grid-row: 9;
+        padding: 90px 33px 60px 33px;
+        background-color: $mid-green;
+        position: relative;
+        z-index: 2;
+        background-image: url(../../images/triangle-border-top.png);
+        background-repeat: repeat-x;
+        background-position-y: 0;
+        background-size: 64px;
+
+        p {
+            padding-bottom: 2rem;
+        }
+
+        h5 {
+            padding: 0 0 1rem 0;
+            margin: 0;
+        }
+
+    }
+
+    .scribbleTop {
+        grid-row: 1 / 4;
+        grid-row: 10;
+
+        &:before {
+            display: flex;
+            width: 100% !important;
+            height: 44px;
+            content: ' ';
+            background-image: url(../../images/scribbleTop.png);
+            z-index: 5;
+            overflow: hidden; 
+            background-color: $mid-green;
+            background-repeat: no-repeat;
+            background-position: bottom;
+        
+        }      
+     
+    }
+
+
+}
+
+
+@media screen and (min-width: $tablet) {
+
+    .about-page {
+        grid-template-columns: 50px 3fr 2fr 50px;
+        grid-template-rows: auto;
+
+        header.about-header {
+            padding-top: 30vh;
+            grid-row: 1;
+            grid-column: 1 / 5;
+
+            h1 { 
+                top: unset !important;
+                margin-bottom: 0 !important;
+                padding-bottom: 0 !important;
+                
+            }
+
+        }
+
+        .about-pencil {
+            grid-column: 2 / 5;
+            grid-row: 2;
+            background-image: url(../../images/about-pencil.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-y: 2px;
+            height: 460px;
+            align-self: flex-start;
+            justify-self: flex-end;
+            width: 360px;
+            z-index: 1;
+            margin-top: -130px;
+    
+        }
+
+        main.content {
+            grid-row: 2;
+            padding: 33px 0;
+        }
+
+        .culture {
+            grid-column: 2 / 5;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+            
+
+            .culture-hero {
+                grid-row: 1;
+                grid-column: 1 / 3;
+                margin-left: 0;
+                height: 380px;
+            }
+
+            .values {
+                padding: 2rem 50px 1em 50px;
+            }
+
+        }
+
+        .story {
+
+            grid-column: 1 / 5;
+
+            .story-hero {
+                grid-template-columns: 50px repeat(4, 1fr) 50px;
+                
+                h2 {
+                    padding-top: 50px;
+                }
+
+                .auckland {
+                    grid-column: 1 / 6;
+                    height: 420px;
+                    margin-right: 0;
+                }
+                .zoom {
+                    height: 280px;
+                    grid-column: 4 / 7;
+                    margin-right: 25px;
+                }
+            }
+
+            .short-story {
+                padding: 280px 50px 5em 50px;
+                margin-top: -240px;
+                margin-left: 50px;
+            }
+
+            .logan-yard {
+                margin-top: -6em;
+            }
+            
+        }
+
+        .discuss-cta {
+            grid-column: 1 / 5;
+            padding: 90px 50px 60px 50px;
+    
+        }
+        .scribbleTop {
+            grid-column: 1 / 5;
+        }
+
+
+    }
+
+    
+
+}
+
+
+// tablet 
+
+@media screen and (min-width: $tablet-wide) {
+
+
+    .about-page {
+        grid-template-columns: 66px 3fr 2fr 66px;
+
+        header.about-header {
+            grid-column: 1 / 5;
+        }
+
+        .about-pencil {
+            margin-top: -180px;
+            width: 520px;
+            height: 800px;
+            background-image: url(../../images/about-pencil-desktop.png);
+            
+        }
+
+        .culture {
+
+            padding-bottom: 150px;
+
+            .culture-hero {
+                h2 { 
+                    padding-left: 45px;
+                }
+            }
+
+            .values {
+                padding-right: 66px;
+                max-width: 540px;
+            }
+
+        }
+
+        .story {
+
+            .story-hero {
+
+                grid-template-columns: 66px repeat(4, 1fr) 66px; 
+                
+                .auckland {
+                    grid-column: 1 / 5;
+                    grid-row: 2;
+                    background-size: contain
+                }
+
+                .zoom {
+                    grid-column: 4 / 6;
+                    margin-top: -40px;
+                    margin-right: 0;
+                }
+
+            }
+
+            .short-story {
+                max-width: 540px;
+                margin-left: 66px;
+                padding-left: 66px;
+                float: left;
+            }
+
+            .logan-yard {
+                margin-top: 100px;
+                margin-right: 66px;
+            }
+
+        }
+
+        .discuss-cta {
+            display: grid;
+            grid-template-columns: 66.6% 33.3%;
+            padding: 116px 66px 66px 66px;
+            
+            h5 {
+                grid-row: 1;
+                grid-column: 1 / 2;
+                line-height: 1.1em;
+            }
+
+            p {
+                grid-row: 2;
+                grid-column: 1 / 2;
+            }
+
+            .btn-mobile {
+                grid-row: 1 / 3;
+                grid-column: 2 / 3;
+                justify-self: center;
+                align-self: center;
+            }
+
+
+        }
+
+    }
+
+
+}
+
+@media screen and (min-width: $desktop) {
+
+
+    .about-page {
+        grid-template-columns: 90px 3fr 2fr 90px;
+
+        header.about-header {
+            h1 {
+                padding-left: 90px !important;
+            }
+
+            &:after {
+                background-size: 102%;
+            }
+
+        }
+
+        .about-pencil {
+        
+            width: 580px;
+            height: 880px;
+            background-image: url(../../images/about-pencil-desktop.png);
+            justify-self: end;
+            background-size: contain;
+            margin-right: 10px;
+        }
+
+        .story {
+
+            .story-hero {
+                grid-template-columns: 90px repeat(4, 1fr) 90px;
+            }
+
+            .short-story {
+                padding-top: 320px;
+                padding-left: 90px;
+                margin-left: 90px;
+                max-width: 600px;
+            }
+
+            .logan-yard {
+                margin-right: 90px;
+            }
+        }
+
+        .discuss-cta {
+            padding-left: 90px;
+            padding-right: 90px;
+        }
+
+    }
+
+}
+
+@media screen and (min-width: $desktop-wide) { 
+
+    .about-page {
+        grid-template-columns: minmax(120px, 1fr) minmax(500px, 700px) 500px minmax(120px, 1fr);
+        
+        header.about-header {
+
+            h1 {
+                max-width: 1200px;
+                padding-left: 0 !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+        }
+
+        .about-pencil {
+            margin-top: -190px;
+            width: 640px;
+            height: 900px;
+            background-image: url(../../images/about-pencil-desktop.png);
+            justify-self: end;
+            background-size: contain;
+            margin-right:3%;
+        }
+
+        .story {
+            grid-column: 2 / 4;
+
+            .story-hero {
+                
+                grid-column: minmax(120px, auto) repeat(4, minmax(auto, 400px)) ;
+
+                h2 {
+                    grid-column: 2 /3;
+                }
+
+            }
+
+        }
+
+        .discuss-cta {
+            display: grid;
+            grid-template-columns: auto minmax(600px, 900px) 300px auto;
+            padding-left: 0;
+            padding-right: 0;
+
+            h5 {
+                grid-column: 2 / 3;
+                grid-row: 1;
+            }
+
+            p {
+                grid-column: 2 / 3;
+                grid-row: 2;
+            }
+
+            .btn-mobile {
+                grid-column: 3 / 4;
+                grid-row: 1 / 3;
+            }
+
+
+
+        }
+    
+    }
+
+}

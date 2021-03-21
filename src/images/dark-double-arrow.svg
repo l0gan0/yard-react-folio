@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="977px" height="520px" viewBox="0 0 977 520" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>down arrows</title>
+    <defs>
+        <filter x="-8.9%" y="-19.0%" width="117.8%" height="137.9%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="25" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Scrolly" transform="translate(-831.000000, -1612.000000)" fill="#232A1E">
+            <g id="down-arrows" filter="url(#filter-1)" transform="translate(888.000000, 1669.000000)">
+                <polygon id="Fill-1" transform="translate(647.000000, 203.000000) rotate(-180.000000) translate(-647.000000, -203.000000) " points="863 217.450847 647.989124 0 431 219.452696 431 406 539.494562 296.273652 647.989124 186.547304 863 404.123267"></polygon>
+                <polygon id="Fill-1" transform="translate(216.000000, 203.000000) rotate(-180.000000) translate(-216.000000, -203.000000) " points="432 217.450847 216.989124 0 -3.06520693e-14 219.452696 -3.06520693e-14 406 108.494562 296.273652 216.989124 186.547304 432 404.123267"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

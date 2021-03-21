@@ -1,0 +1,146 @@
+@import "../../design-tokens/scss-variables.scss";
+
+
+.work-page {
+
+    display: grid;
+    grid-template-columns: 33px 1fr 33px;
+    background-color: $pseudo-white;
+    margin: 0 auto;
+    
+    header {
+        grid-row: 1 / 3;
+        grid-column: 1 / 4;
+        padding-left: 0;
+        padding-top: 30vh;
+
+        &:after {
+            content: ' ';
+            display: flex;
+            width: 100%;
+            height: 44px;
+            grid-column: 1 / 4;
+            grid-row: 2;
+            background-image: url(../../images/scribbleBot.png);
+            z-index: 7;
+            overflow: hidden; 
+            background-color: $pseudo-white;
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+
+        h1 {
+            padding-left: 33px;
+            padding-bottom: 140px !important;
+        }
+
+    }
+
+    main.content {
+        grid-column: 2 / 3;
+        grid-row: 3/4;
+        
+        background-color: transparent;
+        margin-top: -160px;
+    }
+
+    .folio.section {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        grid-row: 3;
+    }
+
+    .folio {
+
+        cursor: pointer;
+
+        .btn-container {
+            margin-bottom: 66px;
+        }
+
+        .folio-item {
+            max-width: 80%;
+            margin: 0 auto;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+
+                h3 {
+                    font-size: 2.05rem;
+                    transition: all .2s ease-in-out;
+                    line-height: 3rem;
+                  
+                }
+
+                .folio-img {
+                    // box-shadow: 25px 25px 0px $light-green;
+                    box-shadow: 0px 0px 26px rgba(0, 0, 0, 0.325);
+                    
+                }
+            }
+
+            h3 {
+                transition: all .2s ease-in-out;
+                line-height: 3rem;
+             
+            }
+
+            header {
+                padding-top: 0;
+                padding-bottom: 33px;
+                
+                &:after {
+                    content: none;
+                }
+            }
+
+            .item-info, .description, .additional-details {
+                display: none;
+            }
+
+        }
+    }
+
+
+}
+
+ul.work-list {
+    display: flex;
+
+    li {
+        padding: 20px;
+    }
+
+}
+
+
+article.folio-item {
+    img {
+        width: 100%;
+    }
+}
+
+.scribbleBot {
+    grid-column: 1 / 4;
+}
+
+
+@media screen and (min-width: $tablet-wide) { 
+
+    section.section.folio {
+        
+
+        .section-center {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .folio-item:nth-child(even) {
+                margin-top: 66px;
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="23px" viewBox="0 0 18 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Services-R1" transform="translate(-875.000000, -1728.000000)">
+            <g id="Group" transform="translate(875.000000, 1728.500000)">
+                <rect id="Rectangle" fill-opacity="0" fill="#FFFFFF" x="0" y="0.5" width="18" height="21"></rect>
+                <rect id="Rectangle-Copy-38" fill="#81D742" x="6" y="10.0625" width="6" height="6" rx="3"></rect>
+                <ellipse id="Oval-Copy" stroke-opacity="0.15" stroke="#7F827C" cx="9" cy="13" rx="8.5" ry="7.9375"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>
